@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Pages.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/action_anasayfaFragment_to_bildirimlerFragment"
+            app:destination="@id/bildirimlerFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_anakartlarFragment2"
+            app:destination="@id/anakartlarFragment2" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_ekranKartlariFragment2"
+            app:destination="@id/ekranKartlariFragment2" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_arkadaslarListesiFragment"
+            app:destination="@id/arkadaslarListesiFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_kullaniciProfileFragment"
+            app:destination="@id/kullaniciProfileFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_kesfetFragment2"
+            app:destination="@id/kesfetFragment2" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_belleklerFragment"
+            app:destination="@id/belleklerFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_self"
+            app:destination="@id/anasayfaFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_kasalarFragment"
+            app:destination="@id/kasalarFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_gucKaynaklariFragment"
+            app:destination="@id/gucKaynaklariFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_islemcilerFragment"
+            app:destination="@id/islemcilerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kesfetFragment2"
+        android:name="com.example.kutaykerem.computerinformaton.Pages.KesfetFragment"
+        android:label="fragment_kesfet"
+        tools:layout="@layout/fragment_kesfet" >
+        <argument
+            android:name="arananParca"
+            app:argType="string"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_kesfetFragment2_to_kullaniciProfileFragment"
+            app:destination="@id/kullaniciProfileFragment" />
+        <action
+            android:id="@+id/action_kesfetFragment2_to_gonderiEkleFragment"
+            app:destination="@id/gonderiEkleFragment" />
+        <action
+            android:id="@+id/action_kesfetFragment2_to_kesfetAnlikDusuncelerFragment"
+            app:destination="@id/kesfetAnlikDusuncelerFragment" />
+        <action
+            android:id="@+id/action_kesfetFragment2_to_anasayfaFragment"
+            app:destination="@id/anasayfaFragment" />
+        <action
+            android:id="@+id/action_kesfetFragment2_to_yorumlarFragment"
+            app:destination="@id/yorumlarFragment" />
+        <action
+            android:id="@+id/action_kesfetFragment2_self"
+            app:destination="@id/kesfetFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/bildirimlerFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Pages.BildirimlerFragment"
+        android:label="fragment_bildirimler"
+        tools:layout="@layout/fragment_bildirimler" >
+        <action
+            android:id="@+id/action_bildirimlerFragment_to_anasayfaFragment"
+            app:destination="@id/anasayfaFragment" />
+        <action
+            android:id="@+id/action_bildirimlerFragment_to_kullaniciProfileFragment"
+            app:destination="@id/kullaniciProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anakartlarFragment2"
+        android:name="com.example.kutaykerem.computerinformaton.Parts.AnakartlarFragment"
+        android:label="fragment_anakartlar"
+        tools:layout="@layout/fragment_anakartlar" >
+        <action
+            android:id="@+id/action_anakartlarFragment2_to_kesfetFragment2"
+            app:destination="@id/kesfetFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/ekranKartlariFragment2"
+        android:name="com.example.kutaykerem.computerinformaton.Parts.EkranKartlariFragment"
+        android:label="fragment_ekran_kartlari"
+        tools:layout="@layout/fragment_ekran_kartlari" >
+        <action
+            android:id="@+id/action_ekranKartlariFragment2_to_kesfetFragment2"
+            app:destination="@id/kesfetFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/arkadaslarListesiFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Pages.ArkadaslarListesiFragment"
+        android:label="fragment_arkadaslar_listesi"
+        tools:layout="@layout/fragment_arkadaslar_listesi" >
+        <action
+            android:id="@+id/action_arkadaslarListesiFragment_to_anasayfaFragment"
+            app:destination="@id/anasayfaFragment" />
+        <action
+            android:id="@+id/action_arkadaslarListesiFragment_to_sohbetlerFragment"
+            app:destination="@id/sohbetlerFragment" />
+        <action
+            android:id="@+id/action_arkadaslarListesiFragment_to_kullaniciProfileFragment"
+            app:destination="@id/kullaniciProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kullaniciProfileFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Pages.KullaniciProfileFragment"
+        android:label="fragment_kullanici_profile"
+        tools:layout="@layout/fragment_kullanici_profile" >
+        <argument
+            android:name="gonderen"
+            app:argType="string"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_kullaniciProfileFragment_to_duzenleFragment"
+            app:destination="@id/duzenleFragment" />
+        <action
+            android:id="@+id/action_kullaniciProfileFragment_to_sohbetlerFragment"
+            app:destination="@id/sohbetlerFragment" />
+        <action
+            android:id="@+id/action_kullaniciProfileFragment_to_userLogin"
+            app:destination="@id/userLogin" />
+        <action
+            android:id="@+id/action_kullaniciProfileFragment_to_anasayfaFragment"
+            app:destination="@id/anasayfaFragment" />
+        <action
+            android:id="@+id/action_kullaniciProfileFragment_self"
+            app:destination="@id/kullaniciProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/duzenleFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Pages.DuzenleFragment"
+        android:label="fragment_duzenle"
+        tools:layout="@layout/fragment_duzenle" >
+        <action
+            android:id="@+id/action_duzenleFragment_to_kullaniciProfileFragment"
+            app:destination="@id/kullaniciProfileFragment" />
+        <action
+            android:id="@+id/action_duzenleFragment_self"
+            app:destination="@id/duzenleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sohbetlerFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Pages.SohbetlerFragment"
+        android:label="fragment_sohbetler"
+        tools:layout="@layout/fragment_sohbetler" >
+        <action
+            android:id="@+id/action_sohbetlerFragment_to_arkadaslarListesiFragment"
+            app:destination="@id/arkadaslarListesiFragment" />
+        <argument
+            android:name="kullaniciId"
+            app:argType="string"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_sohbetlerFragment_to_kullaniciProfileFragment"
+            app:destination="@id/kullaniciProfileFragment" />
+        <action
+            android:id="@+id/action_sohbetlerFragment_self"
+            app:destination="@id/sohbetlerFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/userLogin"
+        android:name="com.example.kutaykerem.computerinformaton.Sign.UserLogin"
+        android:label="activity_user_login"
+        tools:layout="@layout/activity_user_login" />
+    <fragment
+        android:id="@+id/yorumlarFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Pages.YorumlarFragment"
+        android:label="fragment_yorumlar"
+        tools:layout="@layout/fragment_yorumlar" >
+        <argument
+            android:name="gonderiId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_yorumlarFragment_to_kullaniciProfileFragment"
+            app:destination="@id/kullaniciProfileFragment" />
+        <action
+            android:id="@+id/action_yorumlarFragment_self"
+            app:destination="@id/yorumlarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kesfetAnlikDusuncelerFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Pages.KesfetAnlikDusuncelerFragment"
+        android:label="fragment_kesfet_anlik_dusunceler"
+        tools:layout="@layout/fragment_kesfet_anlik_dusunceler" >
+        <action
+            android:id="@+id/action_kesfetAnlikDusuncelerFragment_to_kullaniciProfileFragment"
+            app:destination="@id/kullaniciProfileFragment" />
+        <action
+            android:id="@+id/action_kesfetAnlikDusuncelerFragment_to_kesfetFragment2"
+            app:destination="@id/kesfetFragment2" />
+        <argument
+            android:name="arananAnlikDusunceler"
+            app:argType="string"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_kesfetAnlikDusuncelerFragment_to_yorumlarFragment"
+            app:destination="@id/yorumlarFragment" />
+        <action
+            android:id="@+id/action_kesfetAnlikDusuncelerFragment_self"
+            app:destination="@id/kesfetAnlikDusuncelerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gonderiEkleFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Pages.GonderiEkleFragment"
+        android:label="fragment_gonderi_ekle"
+        tools:layout="@layout/fragment_gonderi_ekle" >
+        <action
+            android:id="@+id/action_gonderiEkleFragment_to_kesfetFragment2"
+            app:destination="@id/kesfetFragment2" />
+        <action
+            android:id="@+id/action_gonderiEkleFragment_to_kesfetAnlikDusuncelerFragment"
+            app:destination="@id/kesfetAnlikDusuncelerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/belleklerFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Parts.BelleklerFragment"
+        android:label="fragment_bellekler"
+        tools:layout="@layout/fragment_bellekler" >
+        <action
+            android:id="@+id/action_belleklerFragment_to_kesfetFragment2"
+            app:destination="@id/kesfetFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/kasalarFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Parts.KasalarFragment"
+        android:label="fragment_kasalar"
+        tools:layout="@layout/fragment_kasalar" >
+        <action
+            android:id="@+id/action_kasalarFragment_to_kesfetFragment2"
+            app:destination="@id/kesfetFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/gucKaynaklariFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Parts.GucKaynaklariFragment"
+        android:label="fragment_guc_kaynaklari"
+        tools:layout="@layout/fragment_guc_kaynaklari" >
+        <action
+            android:id="@+id/action_gucKaynaklariFragment_to_kesfetFragment2"
+            app:destination="@id/kesfetFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/islemcilerFragment"
+        android:name="com.example.kutaykerem.computerinformaton.Parts.IslemcilerFragment"
+        android:label="fragment_islemciler"
+        tools:layout="@layout/fragment_islemciler" >
+        <action
+            android:id="@+id/action_islemcilerFragment_to_kesfetFragment2"
+            app:destination="@id/kesfetFragment2" />
+    </fragment>
+</navigation>

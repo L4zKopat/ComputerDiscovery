@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Pages.DuzenleFragment">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="349dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/asd" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="349dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:srcCompat="@drawable/asd" />
+
+    <EditText
+        android:id="@+id/düzenleEditTextKullaniciAdi"
+        android:layout_width="345dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Kullanıcı adı giriniz"
+        android:inputType="textPersonName"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <EditText
+        android:id="@+id/editTextTextBiyografi"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Biyografi"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="@+id/imageView21"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView21"
+        app:layout_constraintTop_toTopOf="@+id/imageView21"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="349dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/asd" />
+
+    <TextView
+        android:id="@+id/düzenleeposta"
+        android:layout_width="340dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <Button
+        android:id="@+id/kaydetButton"
+        android:layout_width="100dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#015CE5"
+        android:onClick="kaydet"
+        android:text="KAYDET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/gösterge"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="profile"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sh" />
+
+
+    <ImageView
+        android:id="@+id/seceneklerdil"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dilsecenekler"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/türkce"
+        android:layout_width="80dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#015CE5"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:text="Turkish"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toStartOf="@+id/seceneklerdil"
+        app:layout_constraintTop_toTopOf="@+id/seceneklerdil"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ingilizce"
+        android:layout_width="80dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#015CE5"
+        android:text="English"
+        android:visibility="gone"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/türkce"
+        app:layout_constraintStart_toStartOf="@+id/türkce"
+        app:layout_constraintTop_toBottomOf="@+id/türkce"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

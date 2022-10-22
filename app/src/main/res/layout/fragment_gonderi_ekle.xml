@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Pages.GonderiEkleFragment">
+
+    <EditText
+        android:id="@+id/ayrıParca"
+        android:layout_width="291dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yorumlar_yorumedit_bg"
+        android:ems="10"
+        android:hint="Eklemek İstediğiniz Parça Yok Mu? Burdan Ekleyebilirsiniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/parcaModeliEkle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/parcaModeliEkle"
+        app:layout_constraintTop_toBottomOf="@+id/parcaModeliEkle" />
+
+    <ImageView
+        android:id="@+id/selectImage"
+        android:layout_width="140dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="10dp"
+        android:onClick="selectImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        app:srcCompat="@drawable/shf" />
+
+    <EditText
+        android:id="@+id/puanDeger"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        app:layout_constraintVertical_bias="0.195" />
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginBottom="3dp"
+        android:rating="3.0"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#015CE5"
+        android:onClick="yükle"
+        android:text="Yükle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/parcaAdiEkle"
+        android:layout_width="291dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:autoText="false"
+        android:background="@drawable/yorumlar_yorumedit_bg"
+        android:hint="Parça Adını Seçiniz"
+        android:onClick="parcaAdı"
+        android:textAlignment="center"
+        android:textColor="#015CE5"
+        android:textColorHint="#015CE5"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/parcaModeliEkle"
+        android:layout_width="291dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yorumlar_yorumedit_bg"
+        android:hint="Parça Modelini Seçiniz"
+        android:onClick="parcaModeli"
+        android:textAlignment="center"
+        android:textColor="#015CE5"
+        android:textColorHint="#015CE5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parcaAdiEkle" />
+
+    <EditText
+        android:id="@+id/aciklama"
+        android:layout_width="291dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yorumlar_yorumedit_bg"
+        android:ems="10"
+        android:hint="açıklama"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/ayrıParca"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ayrıParca"
+        app:layout_constraintTop_toBottomOf="@+id/ayrıParca" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/ButtomRenk"
+        android:outlineAmbientShadowColor="@color/ButtomRenk"
+        android:outlineSpotShadowColor="@color/ButtomRenk"
+        android:shadowColor="@color/ButtomRenk"
+        android:text="@string/androidSwitch"
+        android:textColor="@color/ButtomRenk"
+        android:textColorHighlight="@color/ButtomRenk"
+        app:layout_constraintEnd_toEndOf="@+id/aciklama"
+        app:layout_constraintStart_toStartOf="@+id/aciklama"
+        app:layout_constraintTop_toBottomOf="@+id/aciklama" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectImage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

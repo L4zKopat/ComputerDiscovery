@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Pages.SohbetlerFragment">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSohbetler"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/secilenRenk" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sohbetlerkisiprofile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="13dp"
+            android:onClick="sohbetlerProfile"
+            android:src="@drawable/sh"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sohbetler_kullanıcı_state"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@id/sohbetlerkisiprofile"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/sohbetlerkisiprofile"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="13dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/sohbetler_kullanıcıAdı"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sohbetlerkisiprofile"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/sohbetlerkisiprofile"
+            android:textSize="23dp"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="13dp" />
+
+        >
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="17dp"
+            android:id="@+id/stateTextCevrimİci"
+            android:layout_marginTop="65dp"
+            tools:layout_editor_absoluteX="85dp"
+            android:textSize="14sp"
+            android:text="Çevrimiçi"
+            android:textColor="@android:color/holo_green_light"
+            tools:layout_editor_absoluteY="13dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/sohbetler_kullanıcı_state"
+            android:layout_marginStart="5dp"
+            tools:ignore="NotSibling"></TextView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="17dp"
+            android:id="@+id/stateTextCevrimDısı"
+            android:layout_marginTop="65dp"
+            tools:layout_editor_absoluteX="85dp"
+            android:textSize="14sp"
+            android:text="Çevrimdışı"
+            android:visibility="gone"
+            android:textColor="@android:color/darker_gray"
+            tools:layout_editor_absoluteY="13dp"
+            android:layout_toRightOf="@id/sohbetler_kullanıcı_state"
+            android:layout_marginStart="5dp"
+            tools:ignore="NotSibling"></TextView>
+
+
+        <ImageView
+            android:id="@+id/sohbetler_geri"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_back"></ImageView>
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/sohbetler_mesajlar_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarSohbetler"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/chatarkaplan"
+        tools:ignore="ExtraText,NotSibling">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <FrameLayout
+        android:id="@+id/sohbetler_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarSohbetler"
+        android:layout_alignBottom="@+id/sohbetler_mesajlar_recyclerView"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp">
+
+
+    </FrameLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+
+        >
+
+
+        <EditText
+            android:id="@+id/sohbetlerEditmesaj"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="55dp"
+            android:layout_toEndOf="@id/gonderImage"
+            android:background="@drawable/sohbetler_mesaj_background"
+            android:elevation="10dp"
+            android:hint=""
+            android:paddingStart="10dp"
+            android:paddingBottom="2dp"
+
+            android:textStyle="bold"></EditText>
+
+
+    <ImageView
+        android:id="@+id/gonderSend"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:onClick="gonder"
+        app:srcCompat="@drawable/ic_send_koyu" />
+
+    <ImageView
+            android:id="@+id/gonderImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="gönderImage"
+            android:layout_marginBottom="1dp"
+        android:layout_marginStart="3dp"
+            app:srcCompat="@drawable/ic_foto_select" />
+
+
+
+    </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

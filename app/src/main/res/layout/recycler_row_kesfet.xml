@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_kesfet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="?android:attr/windowBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NewApi">
+
+        <ImageButton
+            android:id="@+id/yorumlarButton"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="285dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@drawable/yorim"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></ImageButton>
+
+        <TextView
+            android:id="@+id/parcaAdiText"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kullaniciPaylastigiResim"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="285dp"
+            android:text=""
+            android:textColor="@color/secilenRenk"
+            android:textSize="14sp"></TextView>
+
+
+        <ImageView
+            android:id="@+id/kullaniciPaylastigiResim"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/profile"
+            android:layout_gravity="start"
+            android:layout_marginTop="80dp"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile"></ImageView>
+
+        <TextView
+            android:id="@+id/kullaniciAciklamasiText"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/parcaModeliText"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="340dp"
+            android:text=""
+            android:textColor="@color/secilenRenk"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parcaModeliText" />
+
+
+        <TextView
+            android:id="@+id/parcaModeliText"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/parcaAdiText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="310dp"
+            android:text=""
+            android:textColor="@color/secilenRenk"
+            android:textSize="14sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/secenekler_ücnokta_kesfet"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/kesfet_secenekler"
+            android:visibility="gone"
+
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/kesfet_gonderiler_sil"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/sohbetler_mesaj_sil"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints,NotSibling"></ImageView>
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/sh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tarihText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/kullaniciPaylastigiResim"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="5dp"
+            android:text=""
+            android:textColor="@color/secilenRenk"
+            app:layout_constraintBottom_toTopOf="@+id/kullaniciPaylastigiResim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.986"
+            app:layout_constraintStart_toEndOf="@+id/kulllaniciAdiText" />
+
+        <TextView
+            android:id="@+id/puanText"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/yorumlarButton"
+            android:layout_alignStart="@+id/yorumlarButton"
+            android:layout_alignEnd="@+id/yorumlarButton"
+            android:layout_gravity="end"
+            android:layout_marginTop="345dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="4.5"
+            android:textColor="@color/secilenRenk"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toEndOf="@+id/kullaniciAciklamasiText"
+            app:layout_constraintTop_toBottomOf="@+id/yorumlarButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/kulllaniciAdiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/kullaniciPaylastigiResim"
+            android:layout_alignParentEnd="@+id/kullaniciPaylastigiResim"
+            android:layout_gravity="start"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/profile"
+            android:text=""
+            android:textColor="@color/secilenRenk"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/profile"
+            app:layout_constraintTop_toTopOf="@+id/profile" />
+
+
+        <TextView
+            android:id="@+id/textViewyorumlar"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_alignStart="@+id/yorumlarButton"
+            android:layout_alignEnd="@+id/yorumlarButton"
+            android:layout_gravity="end"
+            android:layout_marginTop="325dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="Yorumlar"
+            android:textAlignment="center"
+            android:textColor="@color/secilenRenk"
+            android:textSize="9sp"
+            app:layout_constraintEnd_toEndOf="@+id/yorumlarButton"
+            app:layout_constraintStart_toStartOf="@+id/yorumlarButton"
+            app:layout_constraintTop_toBottomOf="@+id/yorumlarButton" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="ExtraText,MissingConstraints"><![CDATA[
+
+        >]]></androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/secilenRenk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview_kesfet"
+        tools:ignore="TouchTargetSizeCheck"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

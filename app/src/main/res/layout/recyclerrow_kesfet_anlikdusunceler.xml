@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_anlikdüsüncelerkesfet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/secenekler_ücnokta_kesfetanlikdüsünceler"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/kesfet_secenekler"
+            android:visibility="gone"
+
+
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/kesfetanlikdüsünceler_gonderiler_sil"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/sohbetler_mesaj_sil"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints,NotSibling"></ImageView>
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/recyclerrow_anlıkdüsüncelerProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:src="@drawable/sh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <TextView
+            android:id="@+id/recyclerrow_anlıkdüsüncelerKullanıcıAdı"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/recyclerrow_arkadaslar_Propfile"
+            app:layout_constraintTop_toTopOf="@+id/recyclerrow_arkadaslar_Propfile" />
+
+        <ImageButton
+            android:id="@+id/anlıkdusunceyorumlarButton"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/yorim"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewyorumlar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="20dp"
+            android:text="Yorumlar"
+            android:textColor="#015CE5"
+            android:textSize="9sp"
+            app:layout_constraintEnd_toEndOf="@+id/yorumlarButton"
+            app:layout_constraintStart_toStartOf="@+id/yorumlarButton"
+            app:layout_constraintTop_toBottomOf="@+id/yorumlarButton" />
+
+
+        <TextView
+            android:id="@+id/anlıkdusuncepuan"
+            android:layout_width="60dp"
+            android:layout_height="27dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="10dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#015CE5"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toEndOf="@+id/kullaniciAciklamasiText"
+            app:layout_constraintTop_toBottomOf="@+id/yorumlarButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/recyclerrow_anlıkdüsüncelerTarih"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_gravity="end"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:text=""
+            android:textColor="#015CE5"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/recyclerrow_arkadaslar_Propfile"
+            app:layout_constraintTop_toTopOf="@+id/recyclerrow_arkadaslar_Propfile" />
+
+
+        <TextView
+            android:id="@+id/recyclerrow_anlıkdüsüncelerParcaAdi"
+            android:layout_width="320dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="75dp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/recyclerrow_anlıkdüsüncelerParcaModeli"
+            android:layout_width="320dp"
+            android:layout_height="60sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="105dp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/recyclerrow_anlıkdüsüncelerAcıklama"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="150dp"
+            android:paddingBottom="5dp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+
+
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

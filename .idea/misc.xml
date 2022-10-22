@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscover/app/src/main/res/layout/fragment_kesfet_anlik_dusunceler.xml" value="0.21875" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/drawable-v24/dilsecenekelr.xml" value="0.327" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/drawable/kesfet_secenekler.xml" value="0.327" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/activity_info.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/activity_kayit.xml" value="0.5" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/activity_user_login.xml" value="0.22" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_anakartlar.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_anasayfa.xml" value="0.2" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_arkadaslar_listesi.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_bildirimler.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_duzenle.xml" value="0.2" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_ekran_kartlari.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_gonderi_ekle.xml" value="0.19" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_guc_kaynaklari.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_islemciler.xml" value="0.45714285714285713" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_kesfet.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_kesfet_anlik_dusunceler.xml" value="0.22" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_kullanici_profile.xml" value="0.25" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_sohbetler.xml" value="0.16" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/fragment_yorumlar.xml" value="0.2" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/recycler_pc_info.xml" value="0.22596153846153846" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/recycler_pc_list.xml" value="0.18" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/recycler_row_kesfet.xml" value="0.22" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/recycler_row_yorumlar.xml" value="0.22" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/recycler_row_yorumlar_sag.xml" value="0.2" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/recyclerrow_bildirimlerlistesi.xml" value="0.22596153846153846" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/recyclerrow_kesfet_anlikdusunceler.xml" value="0.2" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/recyclerrow_sohbetler_karsi.xml" value="0.16" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/recyclerrow_sohbetler_user.xml" value="1.25" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/layout/recylerrow_arkadaslar_listesi.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/menu/ana_sayfa_tasarim.xml" value="0.3671875" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/menu/dilsec.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerDiscovery/app/src/main/res/menu/kesfet_tasarim.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/debug/res/drawable/ic_back.xml" value="0.368" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/debug/res/drawable/ic_launcher_foreground.xml" value="0.2545" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/debug/res/mipmap-anydpi-v26/uygulama_ico1.xml" value="0.25" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/debug/res/mipmap-anydpi-v26/uygulama_ico1_round.xml" value="0.22" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/drawable/background_arkaplan.xml" value="0.2545" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/drawable/button_radius.xml" value="0.2545" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/drawable/computer_anasayfa_tasarim.xml" value="0.368" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/drawable/ic_foto_select.xml" value="0.2545" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2545" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/drawable/ic_search_new.xml" value="0.368" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/drawable/ic_send_koyu.xml" value="0.2265" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/drawable/search_new_koyu.xml" value="0.2545" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/drawable/sohbetler_mesaj_background.xml" value="0.2545" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/drawable/sohbetler_mesaj_copy.xml" value="0.2545" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/drawable/sohbetler_mesaj_sil.xml" value="0.2545" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/activity_info.xml" value="0.25" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_anakartlar.xml" value="0.3536458333333333" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_anasayfa.xml" value="0.33" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_arkadaslar_listesi.xml" value="1.25" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_bellekler.xml" value="0.3671875" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_ekran_kartlari.xml" value="0.3671875" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_gonderi_ekle.xml" value="0.22" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_guc_kaynaklari.xml" value="0.3671875" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_islemciler.xml" value="0.3536458333333333" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_kasalar.xml" value="0.3536458333333333" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_kesfet.xml" value="0.4513444302176697" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_kesfet_anlik_dusunceler.xml" value="0.25" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_kullanici_profile.xml" value="0.5" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_sohbetler.xml" value="0.33" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/fragment_yorumlar.xml" value="0.5" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/recycler_pc_info.xml" value="0.3671875" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/recycler_pc_list.xml" value="0.33" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/recycler_row_kesfet.xml" value="0.25" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/recycler_row_yorumlar.xml" value="0.75" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/recycler_row_yorumlar_sag.xml" value="0.25" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/recyclerrow_kesfet_anlikdusunceler.xml" value="0.67" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/recyclerrow_sohbetler_karsi.xml" value="0.5" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/recyclerrow_sohbetler_user.xml" value="0.33" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/layout/recylerrow_arkadaslar_listesi.xml" value="0.14" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/menu/ana_sayfa_tasarim.xml" value="0.3671875" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/menu/kesfet_tasarim.xml" value="0.3671875" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/menu/toolbar_search.xml" value="0.3671875" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/menu/toolbar_search_a.xml" value="0.3671875" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/menu/toolbar_search_anlikdüsünceler.xml" value="0.3671875" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.368" />
+        <entry key="..\:/Users/kutay/AndroidStudioProjects/ComputerInformaton/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.368" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

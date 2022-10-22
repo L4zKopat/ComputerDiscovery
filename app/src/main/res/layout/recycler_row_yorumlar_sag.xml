@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/yorumlarKullanıcıProfile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/sh"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/yorumlarKullanıcıAdı"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView"
+        android:visibility="gone"
+        android:textAlignment="textEnd"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/yorumlarKullanıcıProfile"
+        app:layout_constraintEnd_toStartOf="@+id/yorumlarKullanıcıProfile" />
+
+    <TextView
+        android:id="@+id/yorumlarTarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/yorumlar_cardView"
+        app:layout_constraintEnd_toStartOf="@+id/yorumlarKullanıcıAdı"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="@+id/yorumlar_cardView"
+        app:layout_constraintTop_toTopOf="@+id/yorumlarKullanıcıAdı"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yorumlar_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="60dp"
+        android:paddingBottom="7dp"
+        android:visibility="gone"
+        android:layout_marginEnd="42dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/yorumlarKullanıcıProfile"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yorumlarKullanıcıProfile">
+
+
+        <TextView
+            android:id="@+id/yorumlarKullanıcıYorum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="start"
+            android:text="cok güzel gercekten"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/yorumlarKullanıcıProfile"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yorumlarKullanıcıAdı"
+            app:layout_constraintVertical_bias="0.928" />
+
+
+
+
+        >
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/yorumlar_yorum_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/sohbetler_mesaj_copy"
+        app:layout_constraintBottom_toTopOf="@+id/yorumlar_cardView"
+        app:layout_constraintStart_toStartOf="@+id/yorumlarTarih"
+        tools:ignore="MissingConstraints,NotSibling"></ImageView>
+
+    <ImageView
+        android:id="@+id/yorumlar_yorum_sil"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        android:src="@drawable/sohbetler_mesaj_sil"
+        app:layout_constraintBottom_toBottomOf="@+id/yorumlar_yorum_copy"
+        app:layout_constraintStart_toEndOf="@+id/yorumlar_yorum_copy"
+        app:layout_constraintTop_toTopOf="@+id/yorumlar_yorum_copy"
+        tools:ignore="MissingConstraints,NotSibling"></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

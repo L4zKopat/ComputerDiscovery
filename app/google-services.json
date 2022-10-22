@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "952902312357",
+    "project_id": "computersinformation-16d48",
+    "storage_bucket": "computersinformation-16d48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952902312357:android:9b9b8591c0619d7289484c",
+        "android_client_info": {
+          "package_name": "com.example.kutaykerem.computerinformaton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952902312357-7dpbjar90ep8k53tnmeg5n37dpj2vn00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxvE029d9NVUdeXTFwlXcyLtSw9lpzxFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952902312357-7dpbjar90ep8k53tnmeg5n37dpj2vn00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

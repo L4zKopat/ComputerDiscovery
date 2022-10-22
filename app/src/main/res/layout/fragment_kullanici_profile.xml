@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Pages.KullaniciProfileFragment">
+
+
+    <Button
+        android:id="@+id/arkadasİstegiİptalEt"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#015CE5"
+        android:onClick="istegiİptalEt"
+        android:text="Arkadaş isteğini iptal et"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="-15dp"
+        app:layout_constraintBottom_toTopOf="@+id/arkadasİstegiİptalEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile2" />
+
+
+    <Button
+        android:id="@+id/cıkısButton"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#015CE5"
+        android:onClick="cıkıs"
+        android:text="Çıkış"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+    <Button
+        android:id="@+id/sohbetButton"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#015CE5"
+        android:onClick="sohbetButton"
+        android:text="sohbet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+    <TextView
+        android:id="@+id/profilekullaniciadi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/cıkısButton"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toEndOf="@+id/sohbetButton"
+        app:layout_constraintTop_toBottomOf="@+id/ImageProfile" />
+
+    <TextView
+        android:id="@+id/profilebiyografi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2fhdkmş"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/biyografi"
+        app:layout_constraintTop_toBottomOf="@+id/biyografi" />
+
+    <TextView
+        android:id="@+id/biyografi"
+        android:layout_width="106dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:text="Biyografi"
+        android:textColor="#015CE5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sohbetButton" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImageProfile"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/sh"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/cıkısButton"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toEndOf="@+id/sohbetButton"
+        app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/removeProfile"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="-10dp"
+        android:onClick="removeProfile"
+        android:visibility="gone"
+        android:src="@drawable/remove_profile"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageProfile"
+        app:layout_constraintEnd_toStartOf="@+id/cıkısButton"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toEndOf="@+id/profilekullaniciadi" />
+
+    <Button
+        android:id="@+id/düzenle"
+        android:layout_width="93dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#015CE5"
+        android:onClick="düzenle"
+        android:text="düzenle"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/katilmaTarihi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profileArkadasEkle"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#015CE5"
+        android:onClick="arkadasEkle"
+        android:text="Arkadaş isteği gönder"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+    <Button
+        android:id="@+id/arkcikar"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#015CE5"
+        android:onClick="arkcikar"
+        android:text="Arkadaş isteğini iptal et"
+        android:textSize="6sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
