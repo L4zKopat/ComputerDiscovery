@@ -4,7 +4,7 @@
 ## The application where computer parts meet!
 
 Computer Discovery...
-
+English and Turkish language support...
 
 
 ### Reach out to me    
@@ -107,7 +107,7 @@ Login            |  Registration
 <br />
 <br />
 
-➦ Edit profile
+➦ Edit profile 
 
 Profile            |  Edit profile
 :-------------------------:|:-------------------------:
