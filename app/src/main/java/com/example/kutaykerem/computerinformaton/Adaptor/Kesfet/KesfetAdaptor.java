@@ -55,6 +55,7 @@ FirebaseUser firebaseUser;
 ArrayList<KesfetDetails> kesfetDetailsArrayList;
 Context context;
 String userId;
+
     int gonderiPosition = -1;
 
 
@@ -86,7 +87,7 @@ String userId;
     public KesfetHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View  view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_row_kesfet, parent, false);
-            return new KesfetHolder(view);
+        return new KesfetHolder(view);
 
 
 
@@ -103,196 +104,340 @@ String userId;
     public void onBindViewHolder(@NonNull KesfetHolder holder, @SuppressLint("RecyclerView") int position) {
 
 
-
         holder.kullanıcıAciklamasi.setText(kesfetDetailsArrayList.get(position).aciklama);
-        holder.parcaAdi.setText(kesfetDetailsArrayList.get(position).parcaAdi);
         holder.puan.setText(kesfetDetailsArrayList.get(position).puan);
         holder.tarih.setText(kesfetDetailsArrayList.get(position).tarih);
 
-
-        String parcaModeli = kesfetDetailsArrayList.get(position).parcaModeli;
-        String ayrıParca = kesfetDetailsArrayList.get(position).ayrıParca;
-
-        if(parcaModeli != null){
-            holder.parcaModeli.setText(parcaModeli);
-        }else if (parcaModeli == null){
-            holder.ayrıParca.setText(ayrıParca);
-        }
+        String parcaAdi = kesfetDetailsArrayList.get(position).getParcaAdi();
 
 
 
-        DatabaseReference reference = holder.databaseReference.child(kesfetDetailsArrayList.get(position).getGonderenId());
-
-        reference.addValueEventListener(new ValueEventListener() {
+        FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
+        firebaseFirestore.collection("KullanılanDiller").document(userId).collection("SecilenDil").orderBy("tarih", Query.Direction.DESCENDING).limit(1).addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String kullanıcıAdı = snapshot.child("kullanıcıAdı").getValue().toString();
+            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
 
-                holder.kullanıcıAdı.setText(kullanıcıAdı);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+                if(value != null){
+                    for (DocumentSnapshot documentSnapshot : value.getDocuments()) {
+                        Map<String, Object> data = documentSnapshot.getData();
+                        String dil = data.get("dil").toString();
 
 
-
-        Picasso.get().load(kesfetDetailsArrayList.get(position).downloadUrl).into(holder.paylastıgıResim);
+                        if (dil.equals("türkce"))
+                        {
 
 
 
-        String gonderen = kesfetDetailsArrayList.get(position).gonderenId.toString();
 
 
 
-        FirebaseFirestore kullanıcıProfileFirestore = FirebaseFirestore.getInstance();
+                            if (parcaAdi.equals("Anakart"))
+                            {
+                                holder.parcaAdi.setText("Anakart");
 
-        kullanıcıProfileFirestore.collection("Profiles").document("Resimler").collection(gonderen).orderBy("time", Query.Direction.DESCENDING).limit(1).addSnapshotListener(new EventListener<QuerySnapshot>() {
-                @Override
-                public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+                            } else if (parcaAdi.equals("Ekran kartı"))
+                            {
+                                holder.parcaAdi.setText("Ekran kartı");
+                            }
 
-                    if(error !=null){
+                            else if (parcaAdi.equals("İşlemci"))
+                            {
+                                holder.parcaAdi.setText("İşlemci");
+                            }
 
-                    }
+                            else if (parcaAdi.equals("Ram"))
+                            {
+                                holder.parcaAdi.setText("Ram");
+                            }
+                            else if (parcaAdi.equals("Güç kaynağı"))
+                            {
+                                holder.parcaAdi.setText("Güç kaynağı");
+                            }
+                            else if (parcaAdi.equals("Kasa"))
+                            {
+                                holder.parcaAdi.setText("Kasa");
+                            }
+                            else if (parcaAdi.equals("Motherboards"))
+                            {
+                                holder.parcaAdi.setText("Anakart");
+                            }
+                            else if (parcaAdi.equals("Graphics Cards"))
 
-                    if(value != null)
-                    {
+                            {
+                                holder.parcaAdi.setText("Ekran kartı");
+                            }
+                            else if (parcaAdi.equals("Processors"))
 
-                        for(DocumentSnapshot snapshot  : value.getDocuments()){
+                            {
+                                holder.parcaAdi.setText("İşlemci");
+                            }
+                            else if (parcaAdi.equals("Rams"))
+                            {
+                                holder.parcaAdi.setText("Ram");
+                            }
+                            else if (parcaAdi.equals("Power Supplies"))
+                            {
+                                holder.parcaAdi.setText("Güç kaynağı");
+                            }
 
-                            Map<String ,Object> data = snapshot.getData();
+                            else if (parcaAdi.equals("Safes"))
+                            {
+                                holder.parcaAdi.setText("Kasa");
 
-                            if(data.get("ImageProfile") != null){
-                                String image = (String) data.get("ImageProfile");
+                            }
 
-                                Picasso.get().load(image).resize(500,500).into(holder.profile);
+
+
+
+
+
+
+                        } else if (dil.equals("ingilizce"))
+                        {
+
+
+
+                            if (parcaAdi.equals("Anakart"))
+                            {
+                                holder.parcaAdi.setText("Motherboards");
+
+                            } else if (parcaAdi.equals("Ekran kartı"))
+                            {
+                                holder.parcaAdi.setText("Graphics Cards");
+                            }
+
+                            else if (parcaAdi.equals("İşlemci"))
+                            {
+                                holder.parcaAdi.setText("Processors");
+                            }
+
+                            else if (parcaAdi.equals("Ram"))
+                            {
+                                holder.parcaAdi.setText("Rams");
+                            }
+                            else if (parcaAdi.equals("Güç kaynağı"))
+                            {
+                                holder.parcaAdi.setText("Power Supplies");
+                            }
+                            else if (parcaAdi.equals("Kasa"))
+                            {
+                                holder.parcaAdi.setText("Safes");
+                            }
+                            else if (parcaAdi.equals("Motherboards"))
+                            {
+                                holder.parcaAdi.setText("Motherboards");
+                            }
+                            else if (parcaAdi.equals("Graphics Cards"))
+
+                            {
+                                holder.parcaAdi.setText("Graphics Cards");
+                            }
+                            else if (parcaAdi.equals("Processors"))
+
+                            {
+                                holder.parcaAdi.setText("Processors");
+                            }
+                            else if (parcaAdi.equals("Rams"))
+                            {
+                                holder.parcaAdi.setText("Rams");
+                            }
+                            else if (parcaAdi.equals("Power Supplies"))
+                            {
+                                holder.parcaAdi.setText("Power Supplies");
+                            }
+
+                            else if (parcaAdi.equals("Safes"))
+                            {
+                                holder.parcaAdi.setText("Safes");
+
                             }
 
 
 
                         }
+
+
+
                     }
-                };
-
-            });
-
-
-
-
-
-
-
-
-        holder.itemView.findViewById(R.id.profile).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-
-
-
-                // Gezinti
-                String gonderen = kesfetDetailsArrayList.get(position).gonderenId.toString();
-
-
-                KesfetFragmentDirections.ActionKesfetFragment2ToKullaniciProfileFragment action = KesfetFragmentDirections.actionKesfetFragment2ToKullaniciProfileFragment();
-                action.setGonderen(gonderen);
-                Navigation.findNavController(view).navigate(action);
-
-
-
 
 
                 }
 
 
+            };
         });
 
 
-        String gonderiId =  kesfetDetailsArrayList.get(position).gonderiId;
-         if(gonderiId != null){
-
-             holder.yorumlar.setBackground(null);
-
-             holder.yorumlar.setOnClickListener(new View.OnClickListener() {
-                 @Override
-                 public void onClick(View view) {
-                     KesfetFragmentDirections.ActionKesfetFragment2ToYorumlarFragment action = KesfetFragmentDirections.actionKesfetFragment2ToYorumlarFragment(gonderiId);
-                     Navigation.findNavController(view).navigate(action);
-
-                 }
-             });
 
 
 
-         }
-
-
-         holder.paylastıgıResim.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
-
-                 Bundle bundle = new Bundle();
-                 bundle.putString("image",kesfetDetailsArrayList.get(position).downloadUrl);
-
-                 ImageToScreenFragment imageToScreen = new ImageToScreenFragment();
-                 AppCompatActivity appCompatActivity = (AppCompatActivity) view.getContext();
-                 FragmentManager fragmentManager = appCompatActivity.getSupportFragmentManager();
-                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                 fragmentTransaction.replace(R.id.frameLayout_kesfet_toScreen, imageToScreen).commit();
-                 imageToScreen.setArguments(bundle);
 
 
 
-             }
-         });
 
-        holder.secenekler.setVisibility(View.GONE);
-        holder.sil.setVisibility(View.GONE);
-         if(kesfetDetailsArrayList.get(position).getGonderenId().equals(userId)){
 
-             holder.secenekler.setVisibility(View.VISIBLE);
 
-             holder.secenekler.setOnClickListener(new View.OnClickListener() {
+
+            String parcaModeli = kesfetDetailsArrayList.get(position).parcaModeli;
+            String ayrıParca = kesfetDetailsArrayList.get(position).ayrıParca;
+
+            if (parcaModeli != null) {
+                holder.parcaModeli.setText(parcaModeli);
+            } else if (parcaModeli == null) {
+                holder.ayrıParca.setText(ayrıParca);
+            }
+
+
+            DatabaseReference reference = holder.databaseReference.child(kesfetDetailsArrayList.get(position).getGonderenId());
+
+            reference.addValueEventListener(new ValueEventListener() {
                 @Override
-                public void onClick(View view) {
-                    gonderiPosition = position;
-                    notifyDataSetChanged();
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    String kullanıcıAdı = snapshot.child("kullanıcıAdı").getValue().toString();
+
+                    holder.kullanıcıAdı.setText(kullanıcıAdı);
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
 
                 }
             });
 
-            if(gonderiPosition == position){
-                holder.sil.setVisibility(View.VISIBLE);
+
+            Picasso.get().load(kesfetDetailsArrayList.get(position).downloadUrl).into(holder.paylastıgıResim);
 
 
-                holder.cardView.setOnClickListener(new View.OnClickListener() {
-                   @Override
-                   public void onClick(View view) {
-                       holder.sil.setVisibility(View.GONE);
-                   }
-               });
+            String gonderen = kesfetDetailsArrayList.get(position).gonderenId.toString();
+
+
+            FirebaseFirestore kullanıcıProfileFirestore = FirebaseFirestore.getInstance();
+
+            kullanıcıProfileFirestore.collection("Profiles").document("Resimler").collection(gonderen).orderBy("time", Query.Direction.DESCENDING).limit(1).addSnapshotListener(new EventListener<QuerySnapshot>() {
+                @Override
+                public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+
+                    if (error != null) {
+
+                    }
+
+                    if (value != null) {
+
+                        for (DocumentSnapshot snapshot : value.getDocuments()) {
+
+                            Map<String, Object> data = snapshot.getData();
+
+                            if (data.get("ImageProfile") != null) {
+                                String image = (String) data.get("ImageProfile");
+
+                                Picasso.get().load(image).resize(500, 500).into(holder.profile);
+                            }
+
+
+                        }
+                    }
+                }
+
+                ;
+
+            });
+
+
+            holder.itemView.findViewById(R.id.profile).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+
+                    // Gezinti
+                    String gonderen = kesfetDetailsArrayList.get(position).gonderenId.toString();
+
+
+                    KesfetFragmentDirections.ActionKesfetFragment2ToKullaniciProfileFragment action = KesfetFragmentDirections.actionKesfetFragment2ToKullaniciProfileFragment();
+                    action.setGonderen(gonderen);
+                    Navigation.findNavController(view).navigate(action);
+
+
+                }
+
+
+            });
+
+
+            String gonderiId = kesfetDetailsArrayList.get(position).gonderiId;
+            if (gonderiId != null) {
+
+                holder.yorumlar.setBackground(null);
+
+                holder.yorumlar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        KesfetFragmentDirections.ActionKesfetFragment2ToYorumlarFragment action = KesfetFragmentDirections.actionKesfetFragment2ToYorumlarFragment(gonderiId);
+                        Navigation.findNavController(view).navigate(action);
+
+                    }
+                });
 
 
             }
 
 
+            holder.paylastıgıResim.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Bundle bundle = new Bundle();
+                    bundle.putString("image", kesfetDetailsArrayList.get(position).downloadUrl);
+
+                    ImageToScreenFragment imageToScreen = new ImageToScreenFragment();
+                    AppCompatActivity appCompatActivity = (AppCompatActivity) view.getContext();
+                    FragmentManager fragmentManager = appCompatActivity.getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.frameLayout_kesfet_toScreen, imageToScreen).commit();
+                    imageToScreen.setArguments(bundle);
 
 
-             holder.sil.setOnClickListener(new View.OnClickListener() {
-                 @Override
-                 public void onClick(View view) {
-                     GonderiSil(position,view);
-                 }
-             });
+                }
+            });
+
+            holder.secenekler.setVisibility(View.GONE);
+            holder.sil.setVisibility(View.GONE);
+            if (kesfetDetailsArrayList.get(position).getGonderenId().equals(userId)) {
+
+                holder.secenekler.setVisibility(View.VISIBLE);
+
+                holder.secenekler.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        gonderiPosition = position;
+                        notifyDataSetChanged();
+
+                    }
+                });
+
+                if (gonderiPosition == position) {
+                    holder.sil.setVisibility(View.VISIBLE);
 
 
+                    holder.cardView.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            holder.sil.setVisibility(View.GONE);
+                        }
+                    });
 
 
+                }
 
 
-         }
+                holder.sil.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        GonderiSil(position, view);
+                    }
+                });
+
+
+            }
 
 
 
@@ -438,6 +583,7 @@ String userId;
                            } else if (dil.equals("ingilizce")) {
                                textViewyorumlar.setText("Comments");
                            }
+
                        }
                    }
 

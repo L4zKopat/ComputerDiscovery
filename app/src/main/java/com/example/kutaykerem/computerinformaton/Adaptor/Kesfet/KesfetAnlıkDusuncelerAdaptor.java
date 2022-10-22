@@ -71,9 +71,163 @@ public class KesfetAnlıkDusuncelerAdaptor extends RecyclerView.Adapter<KesfetAn
     @Override
     public void onBindViewHolder(@NonNull AnlıkDusuncelerHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.kullanıcıAciklamasi.setText(kesfetAnlıkDusuncelerDetailsArrayList.get(position).aciklama);
-        holder.parcaAdi.setText(kesfetAnlıkDusuncelerDetailsArrayList.get(position).parcaAdi);
         holder.tarih.setText(kesfetAnlıkDusuncelerDetailsArrayList.get(position).tarih);
         holder.puan.setText(kesfetAnlıkDusuncelerDetailsArrayList.get(position).puan);
+
+        String parcaAdi = kesfetAnlıkDusuncelerDetailsArrayList.get(position).getParcaAdi();
+
+        FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
+        firebaseFirestore.collection("KullanılanDiller").document(userId).collection("SecilenDil").orderBy("tarih", Query.Direction.DESCENDING).limit(1).addSnapshotListener(new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+
+                if(value != null){
+                    for (DocumentSnapshot documentSnapshot : value.getDocuments()) {
+                        Map<String, Object> data = documentSnapshot.getData();
+                        String dil = data.get("dil").toString();
+
+
+                        if (dil.equals("türkce"))
+                        {
+
+
+
+                            if (parcaAdi.equals("Anakart"))
+                            {
+                                holder.parcaAdi.setText("Anakart");
+
+                            } else if (parcaAdi.equals("Ekran kartı"))
+                            {
+                                holder.parcaAdi.setText("Ekran kartı");
+                            }
+
+                            else if (parcaAdi.equals("İşlemci"))
+                            {
+                                holder.parcaAdi.setText("İşlemci");
+                            }
+
+                            else if (parcaAdi.equals("Ram"))
+                            {
+                                holder.parcaAdi.setText("Ram");
+                            }
+                            else if (parcaAdi.equals("Güç kaynağı"))
+                            {
+                                holder.parcaAdi.setText("Güç kaynağı");
+                            }
+                            else if (parcaAdi.equals("Kasa"))
+                            {
+                                holder.parcaAdi.setText("Kasa");
+                            }
+                            else if (parcaAdi.equals("Motherboards"))
+                            {
+                                holder.parcaAdi.setText("Anakart");
+                            }
+                            else if (parcaAdi.equals("Graphics Cards"))
+
+                            {
+                                holder.parcaAdi.setText("Ekran kartı");
+                            }
+                            else if (parcaAdi.equals("Processors"))
+
+                            {
+                                holder.parcaAdi.setText("İşlemci");
+                            }
+                            else if (parcaAdi.equals("Rams"))
+                            {
+                                holder.parcaAdi.setText("Ram");
+                            }
+                            else if (parcaAdi.equals("Power Supplies"))
+                            {
+                                holder.parcaAdi.setText("Güç kaynağı");
+                            }
+
+                            else if (parcaAdi.equals("Safes"))
+                            {
+                                holder.parcaAdi.setText("Kasa");
+
+                            }
+
+
+
+
+
+
+
+                        } else if (dil.equals("ingilizce"))
+                        {
+
+
+
+                            if (parcaAdi.equals("Anakart"))
+                            {
+                                holder.parcaAdi.setText("Motherboards");
+
+                            } else if (parcaAdi.equals("Ekran kartı"))
+                            {
+                                holder.parcaAdi.setText("Graphics Cards");
+                            }
+
+                            else if (parcaAdi.equals("İşlemci"))
+                            {
+                                holder.parcaAdi.setText("Processors");
+                            }
+
+                            else if (parcaAdi.equals("Ram"))
+                            {
+                                holder.parcaAdi.setText("Rams");
+                            }
+                            else if (parcaAdi.equals("Güç kaynağı"))
+                            {
+                                holder.parcaAdi.setText("Power Supplies");
+                            }
+                            else if (parcaAdi.equals("Kasa"))
+                            {
+                                holder.parcaAdi.setText("Safes");
+                            }
+                            else if (parcaAdi.equals("Motherboards"))
+                            {
+                                holder.parcaAdi.setText("Motherboards");
+                            }
+                            else if (parcaAdi.equals("Graphics Cards"))
+
+                            {
+                                holder.parcaAdi.setText("Graphics Cards");
+                            }
+                            else if (parcaAdi.equals("Processors"))
+
+                            {
+                                holder.parcaAdi.setText("Processors");
+                            }
+                            else if (parcaAdi.equals("Rams"))
+                            {
+                                holder.parcaAdi.setText("Rams");
+                            }
+                            else if (parcaAdi.equals("Power Supplies"))
+                            {
+                                holder.parcaAdi.setText("Power Supplies");
+                            }
+
+                            else if (parcaAdi.equals("Safes"))
+                            {
+                                holder.parcaAdi.setText("Safes");
+
+                            }
+
+
+
+                        }
+
+
+
+                    }
+
+
+                }
+
+
+            };
+        });
+
 
 
 
