@@ -4,10 +4,12 @@
 ## The application where computer parts meet!
 
 Computer Discovery...
+<br />
+<br />
 English and Turkish language support...
 
 
-### Reach out to me    
+## Reach out to me    
 
 
 [<img height="32" width="32" src="https://unpkg.com/simple-icons@v7/icons/twitter.svg"/>][twitter] 
