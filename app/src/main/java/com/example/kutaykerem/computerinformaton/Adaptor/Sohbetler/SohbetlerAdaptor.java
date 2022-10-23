@@ -227,12 +227,43 @@ public class SohbetlerAdaptor extends RecyclerView.Adapter<SohbetlerAdaptor.Sohb
 
             });
 
+
+
             holder.resim.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View view) {
                     holder.resim.setVisibility(View.GONE);
                     holder.mesajsilcard.setVisibility(View.VISIBLE);
-                    holder.mesajsilResim.setVisibility(View.VISIBLE);
+
+
+
+                    FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+                    String userId = firebaseUser.getUid();
+
+                    FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
+                    firebaseFirestore.collection("KullanılanDiller").document(userId).collection("SecilenDil").orderBy("tarih", com.google.firebase.firestore.Query.Direction.DESCENDING).limit(1).addSnapshotListener(new EventListener<QuerySnapshot>() {
+                        @Override
+                        public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+
+                            if(value != null){
+                                for (DocumentSnapshot documentSnapshot : value.getDocuments()) {
+                                    Map<String, Object> data = documentSnapshot.getData();
+                                    String dil = data.get("dil").toString();
+
+
+                                    if (dil.equals("türkce")) {
+                                        holder.mesajsilResim.setText("Resimi silmek için tıklayınız");
+                                        holder.mesajsilResim.setVisibility(View.VISIBLE);
+
+                                    } else if (dil.equals("ingilizce")) {
+                                        holder.mesajsilResim.setText("Click to delete the picture");
+                                        holder.mesajsilResim.setVisibility(View.VISIBLE);
+                                    }
+                                }
+                            }
+                        };
+                    });
+
 
 
                     holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
