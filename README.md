@@ -113,7 +113,8 @@ Login            |  Registration
 
 Profile            |  Edit profile
 :-------------------------:|:-------------------------:
-![](https://user-images.githubusercontent.com/96310892/197353340-150d999c-caac-4a36-b64a-c93d853cdd5f.png)  |  ![](https://user-images.githubusercontent.com/96310892/197353354-29aa4698-b9ea-441a-b648-1247fc36a52b.png)
+![](https://user-images.githubusercontent.com/96310892/197611407-27cc61e7-864a-4bf7-b7c1-e6f8e280d237.png)  |  ![](https://user-images.githubusercontent.com/96310892/197353354-29aa4698-b9ea-441a-b648-1247fc36a52b.png)
+
 
 
 
