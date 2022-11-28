@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="70dp"
             android:layout_marginTop="20dp"
-            android:text=""
+            android:text="TextView"
             android:textAlignment="viewStart"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/recyclerrow_arkadaslar_Propfile"
@@ -78,7 +78,7 @@
             android:layout_height="40dp"
             android:layout_gravity="end"
             android:layout_marginTop="78dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/yorim"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
@@ -105,7 +105,7 @@
             android:layout_gravity="end"
             android:layout_marginTop="135dp"
             android:layout_marginEnd="10dp"
-            android:text=""
+            android:text="3.5"
             android:gravity="center"
             android:textColor="#015CE5"
             android:textSize="12sp"
@@ -124,7 +124,7 @@
             android:layout_gravity="end"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="10dp"
-            android:text=""
+            android:text="200000"
             android:textColor="#015CE5"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/recyclerrow_arkadaslar_Propfile"
@@ -137,7 +137,7 @@
             android:layout_height="40sp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="75dp"
-            android:text=""
+            android:text="dhfkmş"
             android:textAlignment="viewStart"
             android:textSize="20sp" />
 
@@ -147,7 +147,7 @@
             android:layout_height="60sp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="105dp"
-            android:text=""
+            android:text="3645ıujo"
             android:textAlignment="viewStart"
             android:textSize="20sp"
 
@@ -161,7 +161,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="150dp"
             android:paddingBottom="5dp"
-            android:text=""
+            android:text="3645ıujo"
             android:textAlignment="viewStart"
             android:textSize="20sp"
 

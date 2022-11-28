@@ -15,7 +15,6 @@
         android:layout_height="49dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Password"
         android:inputType="textPersonName"
         android:textColor="#015CE5"
         app:layout_constraintEnd_toEndOf="@+id/imageView18"
@@ -31,6 +30,7 @@
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.659"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/login1" />
@@ -69,7 +69,6 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="#015CE5"
-        android:hint="E-posta"
         app:layout_constraintEnd_toEndOf="@+id/imageView17"
         app:layout_constraintHorizontal_bias="0.646"
         app:layout_constraintStart_toStartOf="@+id/imageView17"

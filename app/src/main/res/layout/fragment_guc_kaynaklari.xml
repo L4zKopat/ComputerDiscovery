@@ -41,7 +41,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:queryHint=""
+            app:queryHint="Arama"
             app:searchIcon="@drawable/search_new_koyu"
             tools:ignore="MissingConstraints">
 
