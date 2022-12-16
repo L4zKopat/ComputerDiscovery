@@ -1,4 +1,4 @@
-## ComputerDiscovery 🖥
+## ComputerDıscovery
 
 
 ## The application where computer parts meet!
