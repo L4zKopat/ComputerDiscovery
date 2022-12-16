@@ -1275,11 +1275,6 @@ public class GonderiEkleFragment extends Fragment {
             pcDetailsArrayList.add("ASUS PRIME A320M-E A320 AM4 AMD Ryzen™ DDR4 3200(O.C.) MHz");
             pcDetailsArrayList.add("ASUS EX-A320M-GAMING A320  socket AM4 AMD Ryzen™DDR4");
             pcDetailsArrayList.add("ASUS PRIME A320M-K A320 AM4 AMD Ryzen™ DDR4 3200(O.C.) MHz");
-
-
-            // GIGAYBT
-
-
             pcDetailsArrayList.add("GIGABYTE H510M H UD Intel H510 socket 1200 DDR4 3200MHz M.2");
             pcDetailsArrayList.add("GIGABYTE H610M H 3200MHz DDR4 socket1700 M.2 HDMI D-Sub");
             pcDetailsArrayList.add("GIGABYTE H610M H 3200MHz DDR4 socket1700 M.2 HDMI D-Sub");
@@ -1297,11 +1292,6 @@ public class GonderiEkleFragment extends Fragment {
             pcDetailsArrayList.add("GIGABYTE B550 GAMING X Amd B550 socket AM4 DDR4 4000MHz");
             pcDetailsArrayList.add("GIGABYTE H310M H 2.0 Intel H310 socket  8.-9. 1151 DDR4");
             pcDetailsArrayList.add("GIGABYTE GA-A320M-S2H A320 Socket AM4 AMD Ryzen™ DDR4");
-
-
-            // MSI
-
-
             pcDetailsArrayList.add("MSI PRO H610M-B DDR4 Intel H610 socket 1700 3200MHz (OC) M.2");
             pcDetailsArrayList.add("MSI B450M-A PRO MAX Amd B450    socket AM4 DDR4 3466(OC) M.2");
             pcDetailsArrayList.add("MSI H510M-A PRO Intel H510      socket 1200 DDR4 3200MHz (OC) M.2");
@@ -1614,7 +1604,6 @@ public class GonderiEkleFragment extends Fragment {
 
         } else if (parcaAdi.equals("İşlemci")|| parcaAdi.equals("Processors"))
         {
-
             pcDetailsArrayList.add("Intel Core i3 12100F socket 1700 12.generation 3.30GHz 12MB 10nm");
             pcDetailsArrayList.add("Intel Core i5 11400F socket 1200 11.generation 2.60GHz 12MB  14nm");
             pcDetailsArrayList.add("Intel Core i3 10100F socket 1200 10.generation 3.60GHz 6MB ");
@@ -1672,15 +1661,16 @@ public class GonderiEkleFragment extends Fragment {
             pcDetailsArrayList.add("AMD Ryzen™5 5500   AM4 4.2 GHz 19MB 65W 7nm");
             pcDetailsArrayList.add("AMD Ryzen™5 5600X  AM4 Wraith Stealth 3.7GHz 32MB 65W");
             pcDetailsArrayList.add("AMD Ryzen™5 5600   AM4 3.5GHz 32MB 65W 7nm");
-            pcDetailsArrayList.add("AMD Ryzen™7 5700X  AM4 3.4GHz 32MB 65W 7nm ");
-            pcDetailsArrayList.add("AMD Ryzen™5 4500   AM4 4.1GHz 11MB 165W 7nm ");
-            pcDetailsArrayList.add("AMD Ryzen™7 5800X  AM4 3.8GHz 32MB 105W 7nm ");
-            pcDetailsArrayList.add("AMD Ryzen™7 5700G  AM4 3.8 GHz 20MB 65W 7nm ");
-            pcDetailsArrayList.add("AMD Ryzen™9 5950X  AM4 3.4GHz 64MB 105W 7nm ");
-            pcDetailsArrayList.add("AMD Ryzen™5 5600G  AM4 3.9 GHz 19MB 65W 7nm ");
-            pcDetailsArrayList.add("AMD Ryzen™7 3800XT AM4 4.7 GHz 36MB 105W 7nm ");
+            pcDetailsArrayList.add("AMD Ryzen™7 5700X  AM4 3.4GHz 32MB 65W 7nm");
+            pcDetailsArrayList.add("AMD Ryzen™5 4500   AM4 4.1GHz 11MB 165W 7nm");
+            pcDetailsArrayList.add("AMD Ryzen™7 5800X  AM4 3.8GHz 32MB 105W 7nm");
+            pcDetailsArrayList.add("AMD Ryzen™7 5700G  AM4 3.8 GHz 20MB 65W 7nm");
+            pcDetailsArrayList.add("AMD Ryzen™9 5950X  AM4 3.4GHz 64MB 105W 7nm");
+            pcDetailsArrayList.add("AMD Ryzen™5 5600G  AM4 3.9 GHz 19MB 65W 7nm");
+            pcDetailsArrayList.add("AMD Ryzen™7 3800XT AM4 4.7 GHz 36MB 105W 7nm");
             pcDetailsArrayList.add("AMD Ryzen™7 3800X  AM4+WraithPrism(RGB) 3.9 GHz");
             pcDetailsArrayList.add("AMD Ryzen™7 3700X  AM4+Wraith Prism(RGB) 3.6 GHz");
+
 
         } else if (parcaAdi.equals("Kasa") || parcaAdi.equals("Safes"))
         {
